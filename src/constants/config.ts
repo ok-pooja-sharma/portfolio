@@ -32,21 +32,24 @@ type TConfig = {
   } & TSection;
   sections: {
     about: Required<TSection>;
-    experience: TSection;
-    feedbacks: TSection;
-    works: Required<TSection>;
+    services: TSection;
+    testimonials: TSection;
+    portfolio: Required<TSection>;
   };
 };
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "DigitalNari.io — Digital Marketing Portfolio",
+    fullName: "Pooja Sharma",
+    email: "poojasharma@quirkhead.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Pooja Sharma",
+    p: [
+      "Welcome to Quirk Head, where we brew eccentric marketing concoctions for hotels, resorts, and restaurants!",
+      "Dive into our 360-degree marketing universe, where we blend creative strategies and innovative solutions.",
+    ],
   },
   contact: {
     p: "Get in touch",
@@ -56,7 +59,10 @@ export const config: TConfig = {
         span: "Your Name",
         placeholder: "What's your name?",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
+      email: {
+        span: "Your Email",
+        placeholder: "What's your email?",
+      },
       message: {
         span: "Your Message",
         placeholder: "What do you want to say?",
@@ -67,28 +73,30 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `Welcome to Quirk Head! I'm Shreiya Khanna, your go-to expert for creative and effective digital marketing solutions tailored for hotels, resorts, and restaurants. With a holistic approach, I specialize in website creation, SEO, social media strategy, and content creation. Let's elevate your brand and captivate your audience!`,
     },
-    experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
+    services: {
+      p: "What I Offer",
+      h2: "Services.",
+      content: `Explore our comprehensive range of services designed to amplify your brand's presence and engage your audience:
+      - Website Creation
+      - Search Engine Optimization (SEO)
+      - Google Ads & Analytics
+      - Social Media Strategy & Management
+      - Online Reputation Management
+      - Digital & Print Ads
+      - Video Ads & Copywriting
+      - OTA Management (Listing Optimization, Review Management, etc.)
+      `,
     },
-    feedbacks: {
-      p: "What others say",
+    testimonials: {
+      p: "What Clients Say",
       h2: "Testimonials.",
     },
-    works: {
-      p: "My work",
-      h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+    portfolio: {
+      p: "My Work",
+      h2: "Portfolio.",
+      content: `Discover our creative projects that showcase our expertise and innovative approach. From brand photography and social media content to concept-based videos and influencer engagements, each project highlights our commitment to excellence and client satisfaction.`,
     },
   },
 };
